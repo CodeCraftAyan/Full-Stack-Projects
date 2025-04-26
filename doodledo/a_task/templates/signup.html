@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}
+DoodleDo | Login
+{% endblock %}
+
+{% block content %}
+
+<main class="flex-grow flex flex-col items-center justify-center p-10">
+        
+    <div class="bg-white p-5 shadow-lg rounded-lg w-full sm:w-[80%] md:w-[60%] lg:w-[50%] mx-auto transform transition-transform hover:scale-105 cursor-pointer">
+        <div class="mb-8">
+            <h2 class="text-emerald-400 text-2xl font-semibold">Signup</h2>
+            <p>Sign up for  <span class="text-violet-400">DoodleDo</span> and let your productivity take shape!</p>
+        </div>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="flex flex-col gap-2 mb-4">
+                <label for="username" class="font-semibold text-purple-500">Username</label>
+                <input 
+                    type="text" 
+                    name="username" 
+                    id="username" 
+                    placeholder="Enter your username here..." 
+                    class="py-2 px-4 rounded border border-purple-300 outline-purple-500 focus:ring-2 focus:ring-purple-200"
+                >
+            </div>
+
+            <div class="flex flex-col gap-2 mb-4">
+                <label for="email" class="font-semibold text-teal-500">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Enter your email id here..." 
+                    class="py-2 px-4 rounded border border-teal-300 outline-teal-500 focus:ring-2 focus:ring-teal-200"
+                >
+            </div>
+        
+            <div class="flex flex-col gap-2 mb-4">
+                <label for="password" class="font-semibold text-pink-500">Password</label>
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Enter your password here..." 
+                    class="py-2 px-4 rounded border border-pink-300 outline-pink-500 focus:ring-2 focus:ring-pink-200"
+                >
+            </div>
+
+            <div class="flex flex-col gap-2 mb-6">
+                <label for="confirmPassword" class="font-semibold text-orange-500">Confirm Password</label>
+                <input 
+                    type="password" 
+                    name="confirmPassword" 
+                    id="confirmPassword" 
+                    placeholder="Confirm your password here..." 
+                    class="py-2 px-4 rounded border border-orange-300 outline-orange-500 focus:ring-2 focus:ring-orange-200"
+                >
+            </div>
+        
+            <div class="text-right">
+                <button 
+                    type="submit" 
+                    class="bg-blue-500 text-white rounded-lg py-2 px-6 hover:bg-blue-600 focus:ring-2 focus:ring-blue-200 transition-all"
+                >
+                    Let's Signup
+                </button>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+{% endblock %}

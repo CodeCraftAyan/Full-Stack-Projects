@@ -1,0 +1,11 @@
+{% if error_message %}
+<div x-data="{ message: true }">
+    <div x-show="message" @click.outside="message = false" class="px-5 py-4 m-4 bg-orange-200 text-orange-400 rounded-lg shadow-lg flex items-center justify-between">
+        <h2 class="flex items-center gap-1">
+            <span class="bi bi-exclamation-circle text-xl"></span> 
+            {{ error_message }}
+        </h2>
+        <p><span x-transition @click="message = !message" class="bi bi-x-square text-3xl hover:text-orange-600 cursor-pointer"></span></p>
+    </div>
+</div>
+{% endif %}
