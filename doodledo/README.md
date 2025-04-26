@@ -32,7 +32,10 @@
 
 ## 📸 UI Preview
 
-*(Add screenshots or a short gif/video link here to showcase the UI)*
+![Screenshot 2025-04-26 125154](https://github.com/user-attachments/assets/8f9058fe-819a-4691-beca-b26f4703cec6)
+![Screenshot 2025-04-26 125248](https://github.com/user-attachments/assets/d17be5ff-b692-453e-8b91-5b235467bd4b)
+![Screenshot 2025-04-26 125315](https://github.com/user-attachments/assets/7e890beb-050a-4846-975a-a8e13cebe8ca)
+![Screenshot 2025-04-26 125352](https://github.com/user-attachments/assets/faf8dc82-2c8b-4123-8245-dfb2d70e79cc)
 
 ---
 
